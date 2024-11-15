@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Ullah Khalid - Nanotechnology Research Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #0d47a1;
+            --accent-color: #01579b;
+            --text-color: #263238;
+            --bg-color: #f5f5f5;
+            --card-bg: #ffffff;
+            --nav-height: 70px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            padding-top: var(--nav-height);
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: var(--primary-color);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            height: var(--nav-height);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .nav-logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+        }
+
+        /* Welcome Section with Slider */
+        #home {
+            position: relative;
+            height: 70vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background-image: url('path/to/molecular-structure.png');
+            background-size: cover;
+            background-blend-mode: overlay;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .slider-container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .slider {
+            display: none;
+        }
+
+        .slider.active {
+            display: block;
+            animation: fade 1s ease-in-out;
+        }
+
+        @keyframes fade {
+            from { opacity: 0.5; }
+            to { opacity: 1; }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            background: url('path/to/molecular-background.png') no-repeat center;
+            background-size: 50%;
+            background-blend-mode: overlay;
+            background-color: rgba(245, 245, 245, 0.9);
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Contact Information */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#home" class="nav-logo">Saif Ullah Khalid</a>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section with Slider -->
+    <div id="home">
+        <div class="slider-container">
+            <div class="slider active">
+                <h1>Welcome to My World of Innovation and Discovery</h1>
+                <p>Unlocking the Future of Nanotechnology and Antibacterial Applications</p>
+            </div>
+            <div class="slider">
+                <h1>Innovative Research on ZnO Nanoparticles</h1>
+                <p>Developing environmentally sustainable antibacterial textiles</p>
+            </div>
+            <div class="slider">
+                <h1>Mentoring Future Scientists</h1>
+                <p>Passionate about education and fostering scientific curiosity</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p>Hi, I’m Saif Ullah Khalid—a passionate nanotechnology researcher, dedicated educator, and relentless innovator in the field of materials science. My work focuses on harnessing the power of ZnO nanoparticles to create antibacterial fabrics with real-world impact. With an M.Phil in Solid State Physics from the University of the Punjab, Lahore, I specialize in merging cutting-edge science with practical applications, especially in functional textiles that are both protective and sustainable.</p>
+        <p>Join me as I explore the possibilities of nanotechnology to reshape how we think about safety, sustainability, and innovation!</p>
+    </section>
+
+    <!-- Research Highlights -->
+    <section id="research">
+        <h2 class="section-title">Research Highlights</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>ZnO-Coated Fabric</h3>
+                <ul>
+                    <li>Enhanced Antibacterial Power: Unique coating for cotton fabrics with exceptional antibacterial properties.</li>
+                    <li>Superhydrophobicity: 157° contact angle for water repellency without compromising breathability.</li>
+                    <li>Sustainable Solutions: Green synthesis minimizes environmental impact.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Advanced Antibacterial Testing</h3>
+                <ul>
+                    <li>Extensive testing using well-diffusion and disk-diffusion methods.</li>
+                    <li>Analysis of nanoparticle treatment variations on antibacterial efficacy.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Professional Skills</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Key Skills</h3>
+                <ul>
+                    <li>Expertise in Synthesis Techniques: Proficient in sol-gel, hydrothermal, and green synthesis.</li>
+                    <li>Antibacterial Testing Proficiency: Skilled in well-diffusion and disk-diffusion methods.</li>
+                    <li>Data Visualization and Analysis: Experienced in Origin, with foundational MATLAB and COMSOL knowledge.</li>
+                    <li>Collaborative Research and Recommendations: Mentorship from Dr. Muhammad Akram Raza, Dr. Saira Riaz, and Dr. Shahzad Naseem.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education and Achievements -->
+    <section id="education">
+        <h2 class="section-title">My Journey in Education and Research</h2>
+        <p>With a Bachelor of Science and an M.Phil in Physics from the University of the Punjab, Lahore, my academic background has given me a strong foundation in solid-state physics and materials science. I continuously expand my knowledge through courses in X-ray diffraction, data analysis, and digital tools, staying at the forefront of nanotechnology research.</p>
+        <p>I have also spent three years teaching secondary-level physics, fostering scientific curiosity and empowering young minds to pursue discovery.</p>
+    </section>
+
+    <section id="achievements">
+        <h2 class="section-title">Honors and Achievements</h2>
+        <ul>
+            <li>Chief Minister’s Punjab Laptop Scheme Recipient (2017): Academic excellence.</li>
+            <li>Role of Honor as Proctor (2019): Leadership and contributions to the university.</li>
+            <li>Sustainability Advocate: Participated in the 2018 Plantation Campaign.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Let’s Connect and Collaborate</h2>
+        <div class="contact-info">
+            <p>Email: saif.pu.edu@gmail.com | saifu35856@gmail.com</p>
+            <p>Phone: +923480678054</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/saif">Connect with me on LinkedIn</a></p>
+        </div>
+    </section>
+
+    <!-- JavaScript for Slider -->
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider');
+
+        setInterval(() => {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].classList.add('active');
+        }, 5000);
+    </script>
+</body>
+</html>
